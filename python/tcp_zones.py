@@ -19,7 +19,7 @@ class PlatoVectorParcelHeader(ctypes.LittleEndianStructure):
         ('padding', ctypes.c_uint32 * 6)
     ]
 # Hardcoded server address, change if needed
-server_addr = ('192.168.1.70', 9009)
+server_addr = ('127.0.0.1', 9009)
 
 def main():
     print('Starting TCP connection to Helius...')
